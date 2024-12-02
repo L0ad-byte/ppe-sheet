@@ -1,6 +1,6 @@
 const form = document.getElementById('userForm');
-const backendUrl = 'https://script.google.com/macros/s/AKfycbxztSHKzeAf1mGGY3KAtt-IYbGnC8H4jMwlVlNh5DAIDoLyZVtDJad7_kXBvv033hNLsQ/exec'; // Replace with your GAS Web App URL
-const API_KEY = 'aml7UysdC6TL3LokHVElNKKcVlnEVQ7i'; // Your generated API key
+const backendUrl = 'https://script.google.com/macros/s/AKfycbxztSHKzeAf1mGGY3KAtt-IYbGnC8H4jMwlVlNh5DAIDoLyZVtDJad7_kXBvv033hNLsQ/exec'; // Replace with your actual GAS Web App URL
+const API_KEY = 'aml7UysdC6TL3LokHVElNKKcVlnEVQ7i'; // Replace with your actual API key
 
 // Register Service Worker
 if ('serviceWorker' in navigator) {
@@ -36,6 +36,7 @@ form.addEventListener('submit', async (e) => {
       });
 
       if (response.ok) {
+        const result = await response.json();
         alert('Data submitted successfully!');
         form.reset();
       } else {
