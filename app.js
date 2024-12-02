@@ -1,5 +1,5 @@
 const form = document.getElementById('userForm');
-const backendUrl = 'https://script.google.com/macros/s/XXXXXXXXXX/exec'; // Replace with your GAS Web App URL
+const backendUrl = 'https://script.google.com/macros/s/AKfycbxztSHKzeAf1mGGY3KAtt-IYbGnC8H4jMwlVlNh5DAIDoLyZVtDJad7_kXBvv033hNLsQ/exec'; // Replace with your GAS Web App URL
 const API_KEY = 'aml7UysdC6TL3LokHVElNKKcVlnEVQ7i'; // Your generated API key
 
 // Register Service Worker
